@@ -7,7 +7,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <Link to="/">
-            <img src="/pokemon.png" width="90" />{" "}
+            <img src="/pokemon.png" width="90" />
           </Link>
           <button
             className="navbar-toggler"
@@ -23,19 +23,13 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  Inicio
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/Pokemon">
-                  Pokemon
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="items">
-                  Items
-                </Link>
+              <a class="nav-link active"  href="/">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Pokemon.js">Pokemon</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Items.js">Items</a>
               </li>
             </ul>
           </div>
